@@ -1,3 +1,4 @@
+import {combineReducers} from 'redux'
 var actions = require('./actions');
 var initialState = [];
 
