@@ -2,11 +2,19 @@ import React from 'react'
 import {render} from 'react-dom'
 import {Provider} from 'redux'
 import {createStore} from 'redux'
+import hotColdApp from './reducers/index'
 
-console.log(React);
-console.log(render);
-console.log(Provider);
-console.log(createStore);
+const gameComponents = {
+    guess:0,
+    
+}
+/*------COMPONENTS--------*/
+
+/*---REDUCERS---*/
+
+/*-----ACTIONS-----*/
+
+/*-----STORE-----*/
 
 render(
 <div>
