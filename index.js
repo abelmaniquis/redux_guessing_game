@@ -16,6 +16,8 @@ const gameComponents = {
 
 /*-----STORE-----*/
 
+
+
 render(
 <div>
 <h1>You can see this</h1>
