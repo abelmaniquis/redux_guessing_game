@@ -54,23 +54,28 @@
 	
 	var _redux = __webpack_require__(172);
 	
-	var _index = __webpack_require__(186);
-	
-	var _index2 = _interopRequireDefault(_index);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	console.log("Here's hotColdApp: ");
-	console.log(_index2.default);
+	var gameComponents = {
+	    guess: 0
+	
+	};
+	/*------COMPONENTS--------*/
+	
+	/*---REDUCERS---*/
+	
+	/*-----ACTIONS-----*/
+	
+	/*-----STORE-----*/
 	
 	(0, _reactDom.render)(_react2.default.createElement(
-	  'div',
-	  null,
-	  _react2.default.createElement(
-	    'h1',
+	    'div',
 	    null,
-	    'You can see this'
-	  )
+	    _react2.default.createElement(
+	        'h1',
+	        null,
+	        'You can see this'
+	    )
 	), document.getElementById('app'));
 
 /***/ },
@@ -22275,61 +22280,6 @@
 	    if (typeof _ret === "object") return _ret.v;
 	  }
 	}
-
-/***/ },
-/* 186 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _redux = __webpack_require__(172);
-	
-	var _guesses = __webpack_require__(187);
-	
-	var _guesses2 = _interopRequireDefault(_guesses);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var hotColdApp = (0, _redux.combineReducers)({
-	    guesses: _guesses2.default
-	});
-	
-	exports.default = hotColdApp;
-
-/***/ },
-/* 187 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	var addGuess = function addGuess() {
-	    var state = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-	    var action = arguments[1];
-	
-	    switch (action.type) {
-	        case 'ADD_GUESS':
-	            return {
-	                id: action.id,
-	                text: action.tries.toString()
-	            };
-	        default:
-	            return state;
-	    }
-	};
-	
-	var guessList = function guessList() {
-	    var state = arguments.length <= 0 || arguments[0] === undefined ? [] : arguments[0];
-	    var action = arguments[1];
-	};
-	
-	exports.default = addGuess;
 
 /***/ }
 /******/ ]);
